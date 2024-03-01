@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    background-color: #3f474f;
+    width: 45%;
+    margin: auto;
+    padding: 30px;
+}
+img{
+    margin: auto;
+}

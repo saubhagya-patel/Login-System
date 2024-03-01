@@ -1,0 +1,33 @@
+<%- include("./partials/header.ejs") %>
+
+<div class="wrapper">
+    <div class="content rounded">
+        <form method="post" action="/user/signup" class="d-flex flex-column">
+            <img class="mb-4" src="/assets/user.svg" alt="user" width="72" height="57">
+            
+            <% if (locals.message) { %>
+              <h1 class="h3 mb-3 fw-normal"> <%= message %> </h1>
+            <% }else { %>
+              <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            <% }%>
+        
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+              <label for="floatingPassword">Password</label>
+            </div>
+        
+            <button class="btn btn-primary w-80 py-2" type="submit">Sign in</button>
+
+          </form>
+          <hr class="featurette-divider">
+          <div>
+            <a href="/user/signup" class="btn btn-primary w-100 py-2">New User? Sign Up!</a>
+          </div>
+    </div>
+</div>
+
+<%- include("./partials/footer.ejs") %>
