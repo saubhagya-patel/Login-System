@@ -58,7 +58,6 @@ This is a login system built using Node.js, Express, and PostgreSQL. It allows u
 
 - Navigate to the signup page (`/user/signup`) to create a new account.
 - Once signed up, you can log in using your credentials on the login page (`/user/login`).
-- After logging in, you can access account management functionalities such as updating your information or resetting your password.
 
 ## Contributing
 
