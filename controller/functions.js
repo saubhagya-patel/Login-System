@@ -3,11 +3,11 @@ import bcrypt from "bcrypt";
 import { resolveInclude } from "ejs";
 
 const db=new pg.Client({
-    host:"localhost",
-    user:"postgres",
-    database:"loginSystem",
-    password:"your_password",
-    port:"5432",
+    user: process.env.PG_USER,
+    host: process.env.PG_HOST,
+    database: process.env.PG_DATABASE,
+    password: process.env.PG_PASSWORD,
+    port: process.env.PG_PORT,
 })
 db.connect();
 
